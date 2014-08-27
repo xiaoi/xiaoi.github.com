@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[xiaoi’s blog]]></title>
-  <link href="http://xiaoi.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Git | xiaoi’s blog]]></title>
+  <link href="http://xiaoi.github.io/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://xiaoi.github.io/"/>
   <updated>2014-08-27T20:30:24+08:00</updated>
   <id>http://xiaoi.github.io/</id>
@@ -12,38 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[The Nil Error]]></title>
-    <link href="http://xiaoi.github.io/blog/2014/08/27/the-nil-error/"/>
-    <updated>2014-08-27T15:05:57+08:00</updated>
-    <id>http://xiaoi.github.io/blog/2014/08/27/the-nil-error</id>
-    <content type="html"><![CDATA[<p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
-
-<p>Generating&hellip;
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/git/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/git/atom.xml does not exist.</p>
-
-<p>问了谷哥哥，还是stackflow上的回答靠谱：</p>
-
-<p>As detailed here since version 2.2 Jekyll has an issue with the layout validation, so you will manually have to change nil to null in 2 files:</p>
-
-<p>source/atom.xml
-source/_includes/custom/category_feed.xml
-This will sort out Jekyll and it will stop hicking up :)</p>
-
-<p>说白了就是要把这两个文件里的nil修改为null，然后再执行:</p>
-
-<p>rake generate
-rake deploy</p>
-
-<p>总算不报错了</p>
-
-<p>传送门：<a href="http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme">http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme</a></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[“hello,octopress”]]></title>

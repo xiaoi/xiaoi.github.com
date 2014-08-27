@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>xiaoi’s blog</title>
+  <title>The Nil Error - xiaoi’s blog</title>
   <meta name="author" content="xiaoi">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaoi.github.io">
+  <link rel="canonical" href="http://xiaoi.github.io/blog/2014/08/27/the-nil-error">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="xiaoi’s blog" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/08/27/the-nil-error/">The Nil Error</a></h1>
+      <h1 class="entry-title">The Nil Error</h1>
     
     
       <p class="meta">
@@ -87,7 +84,7 @@
   </header>
 
 
-  <div class="entry-content"><p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
+<div class="entry-content"><p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
 
 <p>Generating&hellip;
      Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does not exist.
@@ -112,58 +109,52 @@ rake deploy</p>
 
 <p>传送门：<a href="http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme">http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme</a></p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
+  
+
+<span class="byline author vcard">Posted by <span class="fn">xiaoi</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-08-27T15:05:57+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>3:05 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/nil/'>nil</a>, <a class='category' href='/blog/categories/rake/'>rake</a>
+  
+</span>
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2014/08/25/xin-wen-zhang-ming-cheng/">“hello,octopress”</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2014-08-25T20:58:27+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>8:58 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>前后耗费数个小时研究，在您看到这篇文章时，总算是成功了，在部署到git过程中遇到一些问题，顺道一起学了git，虽然有点曲折，但这样折腾几翻，印象颇为深刻（我其实骨子里是个乐天派呀，怎么老是摆出一副被到处欠钱的苦逼脸？）</p>
-
-<p>后记：</p>
-
-<p>1.执行到rake deploy时一直报错，我了个去，最后发现是git仓库的代码和本地的不一致造成的，那就删除远程仓库的代码，曲线救国也是救国嘛，还有一种方案就是研究一下这个rake deploy在哪修改，找到push的地方，加个-f强行推送（有点暴力，姐不喜欢）</p>
-
-<p>2.git push origin source 这句也报错，说是要提交源码到source分支，可是远程仓库根本没有这个分支啊，不得先建立呀，(嗯，就是这么做的，就是奇怪怎么网上的步骤都没提到这个？难道是潜规则？），手动建个分支，git branch source
-再执行那句，总算是给过了</p>
-
-<p>收获：</p>
-
-<p>带着任务学习技术乐趣无穷，发现越是学习越是发现自己的无知，这样感觉是好是坏？</p>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://xiaoi.github.io/blog/2014/08/27/the-nil-error/" data-via="" data-counturl="http://xiaoi.github.io/blog/2014/08/27/the-nil-error/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/08/25/xin-wen-zhang-ming-cheng/" title="Previous Post: “hello,octopress”">&laquo; “hello,octopress”</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -187,6 +178,7 @@ rake deploy</p>
 
   
 </aside>
+
 
     </div>
   </div>
