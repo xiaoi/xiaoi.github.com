@@ -4,11 +4,11 @@
   <title><![CDATA[Category: nil | xiaoi’s blog]]></title>
   <link href="http://xiaoi.github.io/blog/categories/nil/atom.xml" rel="self"/>
   <link href="http://xiaoi.github.io/"/>
-  <updated>2014-08-28T16:44:53+08:00</updated>
+  <updated>2014-08-28T22:59:19+08:00</updated>
   <id>http://xiaoi.github.io/</id>
   <author>
     <name><![CDATA[xiaoi]]></name>
-    
+    <email><![CDATA[xiaoi’s blog  thinking and do it.]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
@@ -20,7 +20,7 @@
     <id>http://xiaoi.github.io/blog/2014/08/27/the-nil-error</id>
     <content type="html"><![CDATA[<p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
 
-<pre><code>Generating... 
+<pre><code>``` Generating... 
  Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
  Build Warning: Layout 'nil' requested in blog/categories/git/atom.xml does not exist.
  Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
