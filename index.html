@@ -9,7 +9,9 @@
   <meta name="author" content="xiaoi">
 
   
-  <meta name="description" content="今天更新文章内容的时候，在执行到rake generate时，报以下错： Generating... Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist. Build &hellip;">
+  <meta name="description" content="偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识： 分支是从master下分出来的，一定是包含master的内容
+要删除git相关的信息，可通过git rm实现
+装个sourceTree图形化管理git(这个有空再研究 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +67,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/08/28/octopressbu-shu-hou-ji/">Octopress部署后记</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-08-28T09:45:41+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>9:45 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识：</p>
+
+<ol>
+<li>分支是从master下分出来的，一定是包含master的内容</li>
+<li>要删除git相关的信息，可通过git rm实现</li>
+<li>装个sourceTree图形化管理git(这个有空再研究)</li>
+</ol>
+
+
+<p>在理清git原理（还只是皮毛），但已经比原先好多了，不再是一头雾水，花了半小时的时间重新成功部署了一次。</p>
+
+<p>前一篇里提到说source分支需要手动建立，这个是我搞错了，原来要在发表文章之后才会生成source分支，这个官方教程里没有提到，网上的文章也大都没有提及。。。</p>
+
+<p>通过以上折腾,学习了多ssh key的配置方法，附上<a href="http://my.oschina.net/meilihao/blog/157716">配置教程</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -180,6 +224,10 @@ rake deploy
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/08/28/octopressbu-shu-hou-ji/">Octopress部署后记</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2014/08/27/the-nil-error/">The Nil Error</a>
