@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | xiaoi’s blog]]></title>
   <link href="http://xiaoi.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://xiaoi.github.io/"/>
-  <updated>2014-08-28T10:30:59+08:00</updated>
+  <updated>2014-08-28T10:42:10+08:00</updated>
   <id>http://xiaoi.github.io/</id>
   <author>
     <name><![CDATA[xiaoi]]></name>
@@ -57,9 +57,7 @@
 <pre><code>git branch source
 </code></pre>
 
-<p>再执行那句，总算是给过了</p>
-
-<p>带着任务学习技术乐趣无穷，发现越是学习越是发现自己的无知，这样感觉是好是坏？</p>
+<p>这儿总感觉有点问题，有时间还是要排查一下source分支怎么来的问题。</p>
 ]]></content>
   </entry>
   
