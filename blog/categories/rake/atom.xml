@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Rake | xiaoi’s blog]]></title>
+  <title><![CDATA[Category: rake | xiaoi’s blog]]></title>
   <link href="http://xiaoi.github.io/blog/categories/rake/atom.xml" rel="self"/>
   <link href="http://xiaoi.github.io/"/>
-  <updated>2014-08-28T11:05:55+08:00</updated>
+  <updated>2014-08-28T11:37:27+08:00</updated>
   <id>http://xiaoi.github.io/</id>
   <author>
     <name><![CDATA[xiaoi]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[The Nil Error]]></title>
+    <title type="html"><![CDATA[the nil error]]></title>
     <link href="http://xiaoi.github.io/blog/2014/08/27/the-nil-error/"/>
     <updated>2014-08-27T15:05:57+08:00</updated>
     <id>http://xiaoi.github.io/blog/2014/08/27/the-nil-error</id>

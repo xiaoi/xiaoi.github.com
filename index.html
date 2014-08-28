@@ -9,7 +9,7 @@
   <meta name="author" content="xiaoi">
 
   
-  <meta name="description" content="偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识： 分支是从master下分出来的，一定是包含master的内容 要删除git相关的信息，可通过git rm实现 装个sourceTree图形化管理git(这个有空再研究 &hellip;">
+  <meta name="description" content="octopress, ssh Octopress部署后记 偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识： 分支是从master下分出来的，一定是包含master的内容 要删除git相关的信息，可通过git &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,74 +20,109 @@
   
   <link rel="canonical" href="http://xiaoi.github.io">
   <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="xiaoi’s blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  
   
 
-</head>
+</head> 
 
 <body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">xiaoi’s blog</a></h1>
-  
-    <h2>think and do it.</h2>
-  
-</hgroup>
+  <div class="aux-container">
+    <a id="nav-toggle" href="#sidr"></a>
+    <a id="search-toggle"></a>
+</div>
 
+<header class="header-container clearfix">
+        <a href="/"><img src="/images/ah-frame.svg" onerror="this.onerror=null; this.src='ah-frame.png'"></a>
 </header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:xiaoi.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+    	
+    	<aside>
+			
+			  	<div class="search-container">
+					<form action="http://google.com/search" method="get">
+						<fieldset role="search">
+							<input type="hidden" name="q" value="site:blog.alexharr.is" />
+							<input class="search-field" type="text" name="q" results="0" placeholder=""/>
+							<input class="submit" type="submit" value=""/>
+						</fieldset>
+					</form>
+				</div>
+			
+		  <div id="main-nav">
+    <nav>
+        <ul>
+        	<li>
+        		
+					<h3>Recent Posts</h3>
+<ul>
+	
+    <li>
+    	<a href="/blog/2014/08/28/octopressbu-shu-hou-ji/">Octopress部署后记</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/08/27/the-nil-error/">The Nil Error</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/08/25/xin-wen-zhang-ming-cheng/">“hello,octopress”</a>
+    </li>
+    
 </ul>
 
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
+
+
+
+
+				
+        	</li>
+        	<li>
+        		<ul>
+                    <li>Projects - <a href="http://www.alexharr.is" target="_blank">alexharr.is</a>
+        			<li>Github - <a href="http://www.github.com/alexharris" target="_blank">github.com/alexharris</a></li>
+                    <li>Twitter - <a href="http://www.twitter.com/alexharris6" target="_blank">@alexharris6</a></li>
+                    <li>Email - <a href="mailto:alexharris6@gmail.com" target="_blank">alexharris6 at gmail</a></li>
+        		</ul>
+        	</li>
+        </ul>
+    </nav>
+</div>
+		</aside>
+		
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/28/octopressbu-shu-hou-ji/">Octopress部署后记</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
+<article>
+	<header>
+  <div class="article-tags">
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/ssh/'>ssh</a>
+  
+</span>
 
 
-<time class='entry-date' datetime='2014-08-28T09:45:41+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>9:45 am</span></time>
-        
-      </p>
-    
-  </header>
+  </div>
+  
+    <h1><a href="/blog/2014/08/28/octopressbu-shu-hou-ji/">
+      Octopress部署后记
+    </a></h1>
+  
+</header>
 
-
-  <div class="entry-content"><p>偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识：</p>
+  <section><p>偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识：</p>
 
 <ol>
 <li> 分支是从master下分出来的，一定是包含master的内容</li>
@@ -101,35 +136,36 @@
 <p>前一篇里提到说source分支需要手动建立，这个是我搞错了，原来要在发表文章之后才会生成source分支，这个官方教程里没有提到，网上的文章也大都没有提及。。。</p>
 
 <p>通过以上折腾,学习了多ssh key的配置方法，附上<a href="http://my.oschina.net/meilihao/blog/157716">配置教程</a></p>
-</div>
+</section>
   
   
 
 
-    </article>
-  
-  
-    <article>
+
+</article>
+
+
+<article>
+	<header>
+  <div class="article-tags">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/27/the-nil-error/">The Nil Error</a></h1>
-    
-    
-      <p class="meta">
-        
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/nil/'>nil</a>, <a class='category' href='/blog/categories/rake/'>rake</a>
+  
+</span>
 
 
+  </div>
+  
+    <h1><a href="/blog/2014/08/27/the-nil-error/">
+      The Nil Error
+    </a></h1>
+  
+</header>
 
-
-<time class='entry-date' datetime='2014-08-27T15:05:57+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>3:05 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
+  <section><p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
 
 <pre><code>Generating... 
  Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
@@ -156,35 +192,36 @@ rake deploy
 <p>收工</p>
 
 <p>传送门：<a href="http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme">click me</a></p>
-</div>
+</section>
   
   
 
 
-    </article>
-  
-  
-    <article>
+
+</article>
+
+
+<article>
+	<header>
+  <div class="article-tags">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/08/25/xin-wen-zhang-ming-cheng/">“hello,octopress”</a></h1>
-    
-    
-      <p class="meta">
-        
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/octopress/'>octopress</a>
+  
+</span>
 
 
+  </div>
+  
+    <h1><a href="/blog/2014/08/25/xin-wen-zhang-ming-cheng/">
+      “hello,octopress”
+    </a></h1>
+  
+</header>
 
-
-<time class='entry-date' datetime='2014-08-25T20:58:27+08:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>8:58 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>前后耗费数个小时研究，在您看到这篇文章时，总算是成功了，在部署到git过程中遇到一些问题，顺道一起学了git，虽然有点曲折，但这样折腾几翻，印象颇为深刻（我其实骨子里是个乐天派呀，怎么老是摆出一副被到处欠钱的苦逼脸？）</p>
+  <section><p>前后耗费数个小时研究，在您看到这篇文章时，总算是成功了，在部署到git过程中遇到一些问题，顺道一起学了git，虽然有点曲折，但这样折腾几翻，印象颇为深刻（我其实骨子里是个乐天派呀，怎么老是摆出一副被到处欠钱的苦逼脸？）</p>
 
 <p>后记：</p>
 
@@ -202,56 +239,32 @@ rake deploy
 </code></pre>
 
 <p>这儿总感觉有点问题，有时间还是要排查一下source分支怎么来的问题。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/08/28/octopressbu-shu-hou-ji/">Octopress部署后记</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/08/27/the-nil-error/">The Nil Error</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/08/25/xin-wen-zhang-ming-cheng/">“hello,octopress”</a>
-      </li>
-    
-  </ul>
 </section>
-
-
-
-
-
   
-</aside>
+  
+
+
+
+</article>
+
+<div class="pagination">
+
+
+
+</div>
+
 
     </div>
   </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - xiaoi -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
+  <footer class="main-footer">
+	<section class="interior-footer">
+		<span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+	</section>
 </footer>
+
+
   
+
 
 
 
@@ -268,7 +281,6 @@ rake deploy
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
-
 
 
 

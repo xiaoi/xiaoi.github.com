@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | xiaoi’s blog]]></title>
+  <title><![CDATA[Category: octopress | xiaoi’s blog]]></title>
   <link href="http://xiaoi.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://xiaoi.github.io/"/>
-  <updated>2014-08-28T11:05:55+08:00</updated>
+  <updated>2014-08-28T11:37:27+08:00</updated>
   <id>http://xiaoi.github.io/</id>
   <author>
     <name><![CDATA[xiaoi]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Octopress部署后记]]></title>
+    <title type="html"><![CDATA[octopress部署后记]]></title>
     <link href="http://xiaoi.github.io/blog/2014/08/28/octopressbu-shu-hou-ji/"/>
     <updated>2014-08-28T09:45:41+08:00</updated>
     <id>http://xiaoi.github.io/blog/2014/08/28/octopressbu-shu-hou-ji</id>
