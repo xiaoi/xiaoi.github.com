@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ssh | xiaoi’s blog]]></title>
+  <link href="http://xiaoi.github.io/blog/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://xiaoi.github.io/"/>
+  <updated>2014-08-28T10:07:25+08:00</updated>
+  <id>http://xiaoi.github.io/</id>
+  <author>
+    <name><![CDATA[xiaoi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress部署后记]]></title>
+    <link href="http://xiaoi.github.io/blog/2014/08/28/octopressbu-shu-hou-ji/"/>
+    <updated>2014-08-28T09:45:41+08:00</updated>
+    <id>http://xiaoi.github.io/blog/2014/08/28/octopressbu-shu-hou-ji</id>
+    <content type="html"><![CDATA[<p>偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识：</p>
+
+<ol>
+<li>分支是从master下分出来的，一定是包含master的内容</li>
+<li>要删除git相关的信息，可通过git rm实现</li>
+<li>装个sourceTree图形化管理git(这个有空再研究)</li>
+</ol>
+
+
+<p>在理清git原理（还只是皮毛），但已经比原先好多了，不再是一头雾水，花了半小时的时间重新成功部署了一次。</p>
+
+<p>前一篇里提到说source分支需要手动建立，这个是我搞错了，原来要在发表文章之后才会生成source分支，这个官方教程里没有提到，网上的文章也大都没有提及。。。</p>
+
+<p>通过以上折腾,学习了多ssh key的配置方法，附上<a href="http://my.oschina.net/meilihao/blog/157716">配置教程</a></p>
+]]></content>
+  </entry>
+  
+</feed>
