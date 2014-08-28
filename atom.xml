@@ -4,7 +4,7 @@
   <title><![CDATA[xiaoi’s blog]]></title>
   <link href="http://xiaoi.github.io/atom.xml" rel="self"/>
   <link href="http://xiaoi.github.io/"/>
-  <updated>2014-08-27T20:43:43+08:00</updated>
+  <updated>2014-08-28T09:17:31+08:00</updated>
   <id>http://xiaoi.github.io/</id>
   <author>
     <name><![CDATA[xiaoi]]></name>
@@ -14,43 +14,37 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://xiaoi.github.io/blog/2014/08/27/test/"/>
-    <updated>2014-08-27T20:43:30+08:00</updated>
-    <id>http://xiaoi.github.io/blog/2014/08/27/test</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[The Nil Error]]></title>
     <link href="http://xiaoi.github.io/blog/2014/08/27/the-nil-error/"/>
     <updated>2014-08-27T15:05:57+08:00</updated>
     <id>http://xiaoi.github.io/blog/2014/08/27/the-nil-error</id>
     <content type="html"><![CDATA[<p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
 
-<p>Generating&hellip;
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/git/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/git/atom.xml does not exist.</p>
+<pre><code>Generating... 
+ Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
+ Build Warning: Layout 'nil' requested in blog/categories/git/atom.xml does not exist.
+ Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
+ Build Warning: Layout 'nil' requested in blog/categories/git/atom.xml does not exist.
+</code></pre>
 
-<p>问了谷哥哥，还是stackflow上的回答靠谱：</p>
+<p>问了谷哥哥，stackflow上的回答依旧靠谱：</p>
 
-<p>As detailed here since version 2.2 Jekyll has an issue with the layout validation, so you will manually have to change nil to null in 2 files:</p>
+<pre><code>As detailed here since version 2.2 Jekyll has an issue with the layout validation, so you will manually have to change nil to null in 2 files:
 
-<p>source/atom.xml
+source/atom.xml
 source/_includes/custom/category_feed.xml
-This will sort out Jekyll and it will stop hicking up :)</p>
+This will sort out Jekyll and it will stop hicking up :)
+</code></pre>
 
 <p>说白了就是要把这两个文件里的nil修改为null，然后再执行:</p>
 
-<p>rake generate
-rake deploy</p>
+<pre><code>rake generate
+rake deploy
+</code></pre>
 
-<p>总算不报错了</p>
+<p>收工</p>
 
-<p>传送门：<a href="http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme">http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme</a></p>
+<p>传送门：<a href="http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme">click me</a></p>
 ]]></content>
   </entry>
   
@@ -63,12 +57,20 @@ rake deploy</p>
 
 <p>后记：</p>
 
-<p>1.执行到rake deploy时一直报错，我了个去，最后发现是git仓库的代码和本地的不一致造成的，那就删除远程仓库的代码，曲线救国也是救国嘛，还有一种方案就是研究一下这个rake deploy在哪修改，找到push的地方，加个-f强行推送（有点暴力，姐不喜欢）</p>
+<pre><code>rake deploy
+</code></pre>
 
-<p>2.git push origin source 这句也报错，说是要提交源码到source分支，可是远程仓库根本没有这个分支啊，不得先建立呀，(嗯，就是这么做的，就是奇怪怎么网上的步骤都没提到这个？难道是潜规则？），手动建个分支，git branch source
-再执行那句，总算是给过了</p>
+<p>   执行这句时一直报错，过程不表，最后发现是git仓库的代码和本地的不一致造成的，那就删除远程仓库的代码，曲线救国也是救国嘛，还有一种方案就是研究一下这个rake deploy在哪修改，找到push的地方，加个-f强行推送（有点暴力，姐不喜欢）</p>
 
-<p>收获：</p>
+<pre><code>git push origin source 
+</code></pre>
+
+<p>这句也报错，说是要提交源码到source分支，可是远程仓库根本没有这个分支啊，不得先建立呀，(嗯，就是这么做的，就是奇怪怎么网上的步骤都没提到这个？难道是潜规则？），手动建个分支，</p>
+
+<pre><code>git branch source
+</code></pre>
+
+<p>再执行那句，总算是给过了</p>
 
 <p>带着任务学习技术乐趣无穷，发现越是学习越是发现自己的无知，这样感觉是好是坏？</p>
 ]]></content>

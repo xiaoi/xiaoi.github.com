@@ -9,7 +9,7 @@
   <meta name="author" content="xiaoi">
 
   
-  <meta name="description" content="今天更新文章内容的时候，在执行到rake generate时，报以下错： Generating&hellip; Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does &hellip;">
+  <meta name="description" content="今天更新文章内容的时候，在执行到rake generate时，报以下错： Generating... Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist. Build &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,28 +86,31 @@
 
 <div class="entry-content"><p>今天更新文章内容的时候，在执行到rake generate时，报以下错：</p>
 
-<p>Generating&hellip;
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/git/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/octopress/atom.xml does not exist.
-     Build Warning: Layout &lsquo;nil&rsquo; requested in blog/categories/git/atom.xml does not exist.</p>
+<pre><code>Generating... 
+ Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
+ Build Warning: Layout 'nil' requested in blog/categories/git/atom.xml does not exist.
+ Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
+ Build Warning: Layout 'nil' requested in blog/categories/git/atom.xml does not exist.
+</code></pre>
 
-<p>问了谷哥哥，还是stackflow上的回答靠谱：</p>
+<p>问了谷哥哥，stackflow上的回答依旧靠谱：</p>
 
-<p>As detailed here since version 2.2 Jekyll has an issue with the layout validation, so you will manually have to change nil to null in 2 files:</p>
+<pre><code>As detailed here since version 2.2 Jekyll has an issue with the layout validation, so you will manually have to change nil to null in 2 files:
 
-<p>source/atom.xml
+source/atom.xml
 source/_includes/custom/category_feed.xml
-This will sort out Jekyll and it will stop hicking up :)</p>
+This will sort out Jekyll and it will stop hicking up :)
+</code></pre>
 
 <p>说白了就是要把这两个文件里的nil修改为null，然后再执行:</p>
 
-<p>rake generate
-rake deploy</p>
+<pre><code>rake generate
+rake deploy
+</code></pre>
 
-<p>总算不报错了</p>
+<p>收工</p>
 
-<p>传送门：<a href="http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme">http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme</a></p>
+<p>传送门：<a href="http://stackoverflow.com/questions/25159075/integrating-bourbon-to-default-octopress-theme">click me</a></p>
 </div>
 
 
@@ -149,8 +152,6 @@ rake deploy</p>
         <a class="basic-alignment left" href="/blog/2014/08/25/xin-wen-zhang-ming-cheng/" title="Previous Post: “hello,octopress”">&laquo; “hello,octopress”</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/08/27/test/" title="Next Post: test">test &raquo;</a>
-      
     </p>
   </footer>
 </article>
@@ -162,10 +163,6 @@ rake deploy</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/08/27/test/">Test</a>
-      </li>
     
       <li class="post">
         <a href="/blog/2014/08/27/the-nil-error/">The Nil Error</a>
