@@ -1,0 +1,3 @@
+[submodule ".themes/calm-shallow-sea"]
+	path = .themes/calm-shallow-sea
+	url = https://github.com/alexharris/calm-shallow-sea
