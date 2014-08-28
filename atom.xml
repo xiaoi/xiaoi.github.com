@@ -4,7 +4,7 @@
   <title><![CDATA[xiaoi’s blog]]></title>
   <link href="http://xiaoi.github.io/atom.xml" rel="self"/>
   <link href="http://xiaoi.github.io/"/>
-  <updated>2014-08-28T10:42:10+08:00</updated>
+  <updated>2014-08-28T11:05:55+08:00</updated>
   <id>http://xiaoi.github.io/</id>
   <author>
     <name><![CDATA[xiaoi]]></name>
@@ -21,9 +21,9 @@
     <content type="html"><![CDATA[<p>偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识：</p>
 
 <ol>
-<li>分支是从master下分出来的，一定是包含master的内容</li>
-<li>要删除git相关的信息，可通过git rm实现</li>
-<li>装个sourceTree图形化管理git(这个有空再研究)</li>
+<li> 分支是从master下分出来的，一定是包含master的内容</li>
+<li> 要删除git相关的信息，可通过git rm实现</li>
+<li> 装个sourceTree图形化管理git(这个有空再研究)</li>
 </ol>
 
 
