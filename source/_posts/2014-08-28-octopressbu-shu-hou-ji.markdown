@@ -10,9 +10,9 @@ categories:
 
 偶然发现github上的source分支下没有源代码文件夹source，可是push不上去，向同事讨教了一下，对git又有些认识：
 
-1. 分支是从master下分出来的，一定是包含master的内容
-2. 要删除git相关的信息，可通过git rm实现
-3. 装个sourceTree图形化管理git(这个有空再研究)
+  1. 分支是从master下分出来的，一定是包含master的内容
+  2. 要删除git相关的信息，可通过git rm实现
+  3. 装个sourceTree图形化管理git(这个有空再研究)
 
 
 在理清git原理之后（还只是皮毛，但已经比原先小白的程度好多了，不再是一头雾水），花了半小时的时间重新成功部署了一次。
