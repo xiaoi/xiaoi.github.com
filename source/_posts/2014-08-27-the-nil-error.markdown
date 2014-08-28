@@ -9,7 +9,7 @@ categories:
 ---
 今天更新文章内容的时候，在执行到rake generate时，报以下错：
 
-	Generating... 
+	``` Generating... 
      Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
      Build Warning: Layout 'nil' requested in blog/categories/git/atom.xml does not exist.
      Build Warning: Layout 'nil' requested in blog/categories/octopress/atom.xml does not exist.
