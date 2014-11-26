@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://xiaoi.github.io/blog/2014/11/26/kafka/</loc>
+    <lastmod>2014-11-26T10:47:21+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://xiaoi.github.io/blog/2014/08/28/octopressbu-shu-hou-ji/</loc>
     <lastmod>2014-08-28T09:45:41+08:00</lastmod>
     <priority>0.8</priority>
@@ -23,21 +29,21 @@
   
   <url>
     <loc>http://xiaoi.github.io/blog/archives/</loc>
-    <lastmod>2014-08-28T22:59:19+08:00</lastmod>
+    <lastmod>2014-11-26T10:50:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://xiaoi.github.io/</loc>
-    <lastmod>2014-08-28T22:59:19+08:00</lastmod>
+    <lastmod>2014-11-26T10:50:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://xiaoi.github.io/blog/categories/</loc>
-    <lastmod>2014-08-28T22:59:19+08:00</lastmod>
+    <lastmod>2014-11-26T10:50:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 消息系统 | xiaoi’s blog]]></title>
+  <link href="http://xiaoi.github.io/blog/categories/xiao-xi-xi-tong/atom.xml" rel="self"/>
+  <link href="http://xiaoi.github.io/"/>
+  <updated>2014-11-26T10:50:49+08:00</updated>
+  <id>http://xiaoi.github.io/</id>
+  <author>
+    <name><![CDATA[xiaoi]]></name>
+    <email><![CDATA[xiaoi’s blog  thinking and do it.]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[kafka]]></title>
+    <link href="http://xiaoi.github.io/blog/2014/11/26/kafka/"/>
+    <updated>2014-11-26T10:47:21+08:00</updated>
+    <id>http://xiaoi.github.io/blog/2014/11/26/kafka</id>
+    <content type="html"><![CDATA[<p>Kafka是一个消息系统，原本开发自LinkedIn，用作LinkedIn的活动流（activity stream）和运营数据处理管道（pipeline）的基础。现在它已为多家不同类型的公司 作为多种类型的数据管道（data pipeline）和消息系统使用。</p>
+]]></content>
+  </entry>
+  
+</feed>
